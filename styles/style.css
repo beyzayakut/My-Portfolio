@@ -58,7 +58,7 @@ a{
 .heading{
     color: var(--black-color);
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.3rem;
     margin-bottom: 3.5rem;
     border-bottom: 0.2rem solid black;
 }
@@ -147,34 +147,57 @@ a{
 /* header end */
 
 /* home start */
-.home{
+.home {
     min-height: 100vh;
-    background: url(../images/)
-    no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: -14.5rem;
     display: flex;
     align-items: center;
-
+    justify-content: center; /* Yatay olarak ortalar */
 }
 
-.home .content{
-    max-width: 60rem;
+.home .content-wrapper {
+    display: flex;
+    align-items: center; /* İçerikleri dikeyde ortalar */
 }
-.home .content h3{
-    font-size: 6rem;
+
+.home .content {
+    display: flex;
+    flex-direction: column; /* Metinleri dikeyde hizalar */
+    max-width: 80rem; /* Metin genişliğini ayarlar */
+    margin-right: 1rem; /* Resim ile metin arasında boşluk sağlar */
+    /* Metinleri biraz sola kaydırmak için padding-left kullanabilirsiniz */
+    padding-right: 18rem; 
+}
+
+.home .content h3 {
+    font-size: 4rem;
     color: black;
 }
-.home .content p{
-    font-size: 2rem;
+
+.home .content h4 {
+    font-size: 3rem;
+    color: #484430;
+}
+
+.home .content p {
+    font-size: 1.7rem;
     font-weight: 300;
     line-height: 1.8;
     padding: 1rem 0;
     color: black;
+    text-transform: none; /* Baş harfleri büyük yapmaz */
 
 }
-/* header end */
+
+.home .content img {
+    max-width: 150px; /* Resmin genişliğini artırır */
+    height: auto; /* Orantıları korur */
+    display: block; /* Blok seviyesinde görünmesini sağlar */
+}
+
+/* home end */
 
 /* about start */
 .about .row {
@@ -193,14 +216,16 @@ a{
     flex: 1 1 45rem;
 }
 .about .row .content h3{
-    font-size: 3rem;
+    font-size: 2.1rem;
     color: black;
 }
 .about .row .content p{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: black;
     padding: 1rem 0;
     line-height: 1.8;
+    text-transform: none; /* Baş harfleri büyük yapmaz */
+
 }
 /* about end */
 
