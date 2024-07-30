@@ -151,7 +151,7 @@ a{
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    margin-top: -14.5rem;
+    margin-top: -10rem;
     display: flex;
     align-items: center;
     justify-content: center; /* Yatay olarak ortalar */
@@ -192,7 +192,7 @@ a{
 }
 
 .home .content img {
-    max-width: 150px; /* Resmin genişliğini artırır */
+    max-width: 170px; /* Resmin genişliğini artırır */
     height: auto; /* Orantıları korur */
     display: block; /* Blok seviyesinde görünmesini sağlar */
 }
@@ -229,10 +229,112 @@ a{
 }
 /* about end */
 
+/* product start */
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box {
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    border-radius: 3rem;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.products .box-container .box .image {
+    margin-bottom: 1.5rem; /* Resim ve başlık arasına boşluk ekleme */
+}
+
+.products .box-container .box .image img {
+    width: 50%; /* Resmin genişliğini küçültme */
+    height: auto; /* Resmin yüksekliğini otomatik ayarlama */
+    display: block;
+    margin: 0 auto;
+}
+
+.products .box-container .box .box-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+.products .box-container .box .box-head .title {
+    font-size: 1.4rem; /* Başlığı küçültme */
+}
+
+.products .box-container .box .box-head .name {
+    font-size: 2.5rem; /* Başlık boyutunu ayarlama */
+    font-weight: bold;
+    text-align: center; /* Merkezi hizalama */
+    overflow-wrap: anywhere;
+}
+
+.products .box-container .box .box-head p {
+    font-size: 1.2rem; /* Paragraf yazı fontunu büyütme */
+    line-height: 1.6; /* Paragraflar arasında boşluk ekleme */
+    text-align: left; /* Metni sola yaslama */
+    margin-bottom: 1rem; /* Paragraflar arasına boşluk ekleme */
+}
+
+
+
+/* product end */
+
+
+
+
+
+/* review start */
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.review .box-container .box h6{
+    font-size: 1.9rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.review .box-container .box .user{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* review end  */
+
+
 /* contact start */
 .contact .row{
     display: flex;
-    background-color: black;
+    background-color: rgb(135, 129, 129);
     flex-wrap: wrap;
     gap: 1rem;
 } 
@@ -251,7 +353,7 @@ a{
 
 .contact .row form h3{
    text-transform: uppercase;
-   font-size: 3.5rem;
+   font-size: 3rem;
    color: white;
 }
 
@@ -269,17 +371,17 @@ a{
 }
 
 .contact .row form .inputBox input{
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.7rem;
+    width: 80%;
+    padding: 0.6rem;
+    font-size: 1.4rem;
     color: #fff;
+    border-radius: 50rem;
     text-transform: none;
-    background: transparent;
     border-color: #fff;
 }
 
 .contact .row form .btn{
-    color: black;
+    color: rgb(28, 27, 27);
     background-color: #fff;
     font-weight: bold;
 
@@ -340,9 +442,9 @@ a{
     background-color: white;
     padding: 0.7rem 2rem ;
     color: white;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #4f4a2d;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     border: var(--border);
 }
 
